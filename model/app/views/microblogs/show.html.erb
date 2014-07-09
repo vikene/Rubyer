@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Content:</strong>
+  <%= @microblog.content %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @microblog.user_id %>
+</p>
+
+<p>
+  <strong>Tag:</strong>
+  <%= @microblog.tag %>
+</p>
+
+<%= link_to 'Edit', edit_microblog_path(@microblog) %> |
+<%= link_to 'Back', microblogs_path %>
